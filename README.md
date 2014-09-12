@@ -1,7 +1,7 @@
 netstat-based-network-map
 =========================
 
-## Runs netstat (it actually access /proc/net/tcp and /proc/net/tcp6 directly) on client machines and send results to an aggregator server, which then builds a network-map based on the private-network connections. ##
+#### Runs netstat (it actually access /proc/net/tcp and /proc/net/tcp6 directly) on client machines and send results to an aggregator server, which then builds a network-map based on the private-network connections. ####
 
 *netstat_monitor.py* should be installed on machines to be monitored. This version is configured to collect TCP connections (IPv4 and IPv6) each 2 seconds, consolidate them, and send to the aggregator server each 10 seconds. 
 For now data are being saved locally in a berkleydb key-value file for each client.
